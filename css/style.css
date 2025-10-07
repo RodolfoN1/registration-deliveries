@@ -1,0 +1,264 @@
+:root{
+    --btn-success: #82b19b;
+    --btn-danger: #b74d57;
+    --totvs-bg: #023;
+    --totvs-color: #00dbff;
+    --white: #fff;
+    --black:#333;
+    --border-color: #cbd5e1;
+    --table-header-bg: #d5d5d5;
+    --table-body-bg: #f4f4f4;
+    --font-size-11: 10px;
+    --font-size-11: 11px;
+    --font-size-12: 12px;
+    --font-size-14: 14px;
+    --font-size-16: 16px;
+    --font-size-18: 18px;
+    --font-size-20: 20px;
+    --font-size-24: 24px;
+}
+
+body {
+    font-family: "Verdana", "Roboto", "Arial", sans-serif;
+    box-sizing: border-box;
+    color: var(--black);
+    font-size: var(--font-size-16);
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+   margin: 0;
+}
+
+header{
+    background-color: var(--totvs-bg);
+    display: flex;
+    color: var(--white);
+    padding: 30px;    
+}
+
+header h1{
+    font-size: var(--font-size-24);
+    font-weight: 400;
+    margin: 0;
+}
+
+label {
+    display: block;
+    margin: 8px 0;
+    font-weight: 600;
+    font-size: var(--font-size-12);
+}
+
+input,
+select,
+textarea,
+button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    gap: 8px;
+}
+
+nav button {
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    font-size: var(--font-size-14);
+    line-height: normal;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px 0 30px 0;
+}
+
+.card {
+    background: var(--white);
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 3px 18px rgba(226,226,226,.4);
+    margin-bottom: 16px;
+    border-top: 1px solid var(--black) !important;
+    border-right: 1px solid var(--black) !important;
+    border-left: 1px solid var(--black) !important;
+    border-radius: initial;
+    border-bottom: 1px solid var(--black);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    position: relative;
+    z-index: 2;    
+}
+
+.pending-select{
+    margin-top: 20px;
+}
+
+.card form{
+    margin-top: 10px;
+}
+
+.error {
+    color: var(--btn-danger);
+    font-size: var(--font-size-12);
+}
+
+.readonly {
+    background: #f1f5f9;
+}
+
+.grid {
+    display: grid;
+    gap: 12px;
+}
+
+.cols-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.row{
+    grid-row: 4;
+}
+
+.btn {
+    background: var(--btn-success);
+    color: var(--white);
+    border: none;
+    padding: 10px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: var(--font-size-12);
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.btn-danger {
+    background: var(--btn-danger);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table thead th{
+    font-size: var(--font-size-14);
+    background-color: var(--table-header-bg);
+}
+
+.table tbody td{
+    font-size: var(--font-size-12);
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    text-align: left;
+}
+
+.table tr:nth-child(even){
+    background-color: var(--table-body-bg);
+}  
+
+.form__title{
+    font-size: var(--font-size-20);
+}
+
+.form__item.is--grid-col{
+    grid-column:1 / -1
+}
+
+.form__item.two-fields{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px
+}
+
+.form__item.two-fields div{
+    width: 50%;
+}
+
+.form__item.row, .row{
+    display: flex;
+    gap:10px;
+}
+
+[data-tab]{
+    color: #B7B7BE;
+
+    position: relative;
+    top: 1px;   
+    
+    border-radius: initial !important;
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;    
+}
+
+[data-tab].is--active{
+    color: var(--black);
+    border: 1px solid var(--black);
+    color: var(--black);
+    border: 1px solid var(--black);
+    border-bottom: initial;
+    border-top: 1px solid var(--black) !important;
+    border-right: 1px solid var(--black) !important;
+    border-left: 1px solid var(--black) !important;
+    z-index: 9; 
+}
+
+.table__item.is--center{
+    text-align: center !important;
+}
+
+@media (max-width:768px){
+    .container{
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    header h1{
+        font-size: var(--font-size-18);
+    }
+
+    .grid{
+        gap: initial;
+        column-gap: 12px;
+        row-gap: 8px;        
+    }
+
+    .btn{
+        font-size: var(--font-size-10);
+    }
+
+    .card form{
+        margin: initial;
+    }
+
+    .table{
+        overflow: auto;
+        display: block;
+    }
+
+    .table thead th{
+        font-size: var(--font-size-12);
+    }
+
+    .table tbody td,
+    label{
+        font-size: var(--font-size-11);
+    } 
+}
