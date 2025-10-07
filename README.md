@@ -60,7 +60,6 @@ A organização do código segue uma estrutura lógica ES Modules (ESM):
 ### Fluxograma do projeto
 
 Segue link do arquivo .bpmn para criar o projeto no site: <br />
-[Link do site bpmn](docs/diagrama.bpmn) > open <br />
 [Link google drive arquivo bpmn](https://drive.google.com/file/d/1RPv1Bb2vt4jna75hMJzUgi0tl-1Md2X0/view?usp=sharing)
 
 <div>
