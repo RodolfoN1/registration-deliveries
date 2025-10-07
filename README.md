@@ -60,10 +60,11 @@ A organização do código segue uma estrutura lógica ES Modules (ESM):
 ### Fluxograma do projeto
 
 Segue link do arquivo .bpmn para criar o projeto no site: <br />
+[Link do site bpmn](docs/diagrama.bpmn) > open <br />
 [Link google drive arquivo bpmn](https://drive.google.com/file/d/1RPv1Bb2vt4jna75hMJzUgi0tl-1Md2X0/view?usp=sharing)
 
 <div>
-<a href="https://github.com/RodolfoN1/registration-deliveries/blob/main/assets/diagram.svg" target="_blank" rel="noopener noreferrer">
+<a href="https://github.dev/RodolfoN1/registration-deliveries/blob/dev/assets/diagram.svg" target="_blank" rel="noopener noreferrer">
     Link do Diagrama
 </a>
 </div>
@@ -103,7 +104,7 @@ registration-deliveries/
 ├── index.html
 ├── package.json
 ├── README.md
-└── server.js 
+└── server.js
 
 </pre>
 
